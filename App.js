@@ -26,17 +26,12 @@ const App: () => React$Node = () => {
         <View style={styles.header}>
           <Text style={styles.title}>HEADER</Text>
         </View>
-        {/* FIXME: DECOMMENT NEXT LINE TO GET DESIRED BEHAVIOUR */}
-        {/* <View style={{backgroundColor: 'pink', height, maxHeight: 270}}> */}
           <AutoHeightWebView
             source={{html: isLarge ? largeHtmlContent : smallHtmlContent}}
             style={styles.webview}
+            containerStyle={{ flex: 0 }}
             customStyle={`body{background-color: yellow;}`}
-            // FIXME: DECOMMENT NEXT LINE TO GET DESIRED BEHAVIOUR
-            // onSizeUpdated={size => setHeight(size.height)}
           />
-        {/* FIXME: DECOMMENT NEXT LINE TO GET DESIRED BEHAVIOUR */}
-        {/* </View> */}
         <View style={styles.footer}>
           <Text style={styles.title}>FOOTER</Text>
         </View>

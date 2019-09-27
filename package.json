@@ -13,7 +13,7 @@
     "react": "16.8.1",
     "react-native": "0.61.1",
     "react-native-autoheight-webview": "^1.2.2",
-    "react-native-webview": "^7.2.7"
+    "react-native-webview": "https://github.com/marcorm/react-native-webview.git#container-style"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
